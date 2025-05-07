@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>고위험 TEST</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 40px;
+    }
+
+    .button {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid white;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      margin: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      width: 80%;
+      max-width: 400px;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.25);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .button {
+        font-size: 1rem;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>고위험 TEST</h1>
+    <button class="button" onclick="goToLink('https://docs.google.com/forms/d/e/1FAIpQLSeooV9QOG0rgHXowHSHtkBh0fJW8sLmbdOo-OjRe8U4W7HBaA/viewform?usp=dialog')">시스템비계</button>
+    <button class="button" onclick="goToLink('https://docs.google.com/forms/d/e/1FAIpQLSflsVn-emoSvFFp8dciyf2eIuwx25kOgVRJcAH0cuQ8RPslmg/viewform?usp=dialog')">시스템동바리</button>
+    <button class="button" onclick="goToLink('https://docs.google.com/forms/d/e/1FAIpQLSfP8lmjLdRI0kkWqh-rxFz6fKdDL9Dlcdvpt7zxQ82pLCip6Q/viewform?usp=dialog')">타워크레인</button>
+    <button class="button" onclick="goToLink('https://docs.google.com/forms/d/e/1FAIpQLSctjmG1RnE9NqKoA2BU-LUr0juJsBgCG_LgwUSNNjlZPwxK4g/viewform?usp=dialog')">호이스트</button>
+    <button class="button" onclick="goToLink('https://docs.google.com/forms/d/e/1FAIpQLSdVDL1hOkRFVh9ijyu2fLwKOEW79VpkHU9rB1I-laWe-ddAJw/viewform?usp=dialog')">창호</button>
+    <button class="button" onclick="goToLink('https://docs.google.com/forms/d/e/1FAIpQLSc9Q_Y6dGUz_Gz674-rw6yt1JwoT3CkkL8yAfjqqeBdMAjmvA/viewform?usp=dialog')">RCS</button>
+    <button class="button" onclick="goToLink('https://docs.google.com/forms/d/e/1FAIpQLScPgTfQUzYMu8df4vW5pKNYUjQFaL0XDjNj1F-mCcJrNuXClA/viewform?usp=dialog')">CPB</button>
+    <button class="button" onclick="goToLink('https://docs.google.com/forms/d/e/1FAIpQLSdmBTndJ8VuNE0Cx7YS2LNIaB89CJ56k1l8UI0Gil6shxYikA/viewform?usp=dialog')">장비(이동식크레인/스카이)</button>
+    <button class="button" onclick="goToLink('https://docs.google.com/forms/d/e/1FAIpQLSdnOkcE1xyGVG5qY9rJyc-wwGIIwcUG95Zq0cA1gwsbv9l6yw/viewform?usp=dialog')">화기</button>
+    <button class="button" onclick="goToLink('https://docs.google.com/forms/d/e/1FAIpQLSeL0IFL82vcbZgBdRD_MMeqWC1-ldwJCMTNzOYJ0uaXGhocug/viewform?usp=dialog')">밀폐공간</button>
+    <button class="button" onclick="goToLink('https://docs.google.com/forms/d/e/1FAIpQLSd0uHIOuR4UX57VNIvkLXocr1xAcPBhnBZNVpvkZZcSvG65wg/viewform?usp=dialog')">소음/분진</button>
+  </div>
+
+  <script>
+    function goToLink(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
