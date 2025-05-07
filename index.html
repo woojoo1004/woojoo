@@ -47,6 +47,10 @@
       transition: background-color 0.3s, transform 0.2s;
       width: 80%;
       max-width: 400px;
+      min-height: 60px; /* ✅ 버튼 높이 고정 */
+      white-space: nowrap; /* ✅ 줄바꿈 방지 */
+      overflow: hidden; /* ✅ 넘치는 텍스트 숨김 */
+      text-overflow: ellipsis; /* ✅ 말줄임표 처리 */
     }
 
     .button:hover {
@@ -62,6 +66,7 @@
       .button {
         font-size: 1rem;
         padding: 10px 20px;
+        min-height: 50px; /* 모바일에서도 높이 유지 */
       }
     }
   </style>
